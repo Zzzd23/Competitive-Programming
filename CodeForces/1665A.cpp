@@ -38,47 +38,13 @@ using namespace std;
 #define sz(a) ((int)a.size())
 #define memfull(x, y) memset(x, y, sizeof(x))
  
-int lcm(int a, int b){
 
-    return (a / __gcd(a, b)) * b;
-
-}
-
- 
 void tc(){
  
     int n = 0;
     cin >> n;
 
-    int a = (n / 4);
-
-    int c = a;
-
-    int b = 0, d = b;
-
-    for(int i = 1; i <= a; i++){
-
-        for(int j = 1; j <= a; j++){
-
-
-               if((__gcd(a, i) == lcm(a, j)) && ((a + i + c + j) == n)){
-
-                cout << "SI\n";
-
-                    b = i;
-                    d = j;
-                    break;
-
-
-
-               }
-
-        }
-        
-
-    }
-
-    cout << a << " " << b << " " << c << " " << d << "\n";
+    cout << n - 3 << " " << 1 << " " << 1 << " " << 1 << "\n";
  
 }
  
